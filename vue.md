@@ -1,4 +1,9 @@
-# key的使用
+## vue双向绑定
+***
+vue.js采用数据劫持结合发布者-订阅者模式，通过object.defineProperty()来劫持各个属性的setter(),getter()方法，在数据变动时发布消息给订阅者，触发相应的监听回调。
+***
+
+## key的使用
 
 ***
 
@@ -40,6 +45,7 @@ vue官方文档给出下面的两个例子。
 
 ## checkbox中多个复选框绑定同一个数组
 
+***
 
 ```html
 <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
@@ -84,3 +90,5 @@ new Vue({
 })
 ```
 该例中A、B、C加入到`selected`数组的顺序是按照`option`顺序A、B、C进行排列的，与选择A、B、C的先后顺序无关。
+
+***
